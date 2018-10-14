@@ -57,6 +57,7 @@ html{
   font-weight: bold;
   padding: 0.25rem 0 2rem 3rem;
 }
+
     /* Navigation line */
 .navigation{
   background-color: firebrick;
@@ -69,6 +70,10 @@ html{
   flex-direction: row;
   justify-content: space-between;
   padding: 0 10%;
+}
+
+.navigation .menu{
+  display: none;
 }
 
   /*Main Container*/
@@ -152,4 +157,94 @@ footer{
   display: flex;
   align-items: center;
   padding-left: 5.8rem;
+}
+
+
+@media only screen and (max-width: 1024px) and (orientation: portrait){
+  body{
+    overflow-x: hidden;
+  }
+
+  .header{
+    margin-left: 0;
+  }
+
+  .text-box{
+    margin-left: 0;
+  }
+
+  .navigation nav{
+    display: none;
+  }
+
+  .navigation .menu{
+    display: inline;
+    text-align: center;
+  }
+
+  .main{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container1, .container2{
+    width: 47%;
+  }
+
+  .container3{
+    display: none;
+  }
+
+  .last{
+    margin: 3rem auto;
+  }
+
+  footer{
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .start{
+    height: 15rem;
+  }
+
+  .text-box{
+    margin-top: 10rem;
+  }
+
+  .start .line1{
+    font-size: 0.77rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  .start .line2{
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .container1, .container4, .container5{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container2{
+    display: none;
+  }
+
+  .container4{
+    margin-bottom: 1rem;
+  }
+
+  .last{
+    flex-direction: column;
+  }
+
+  footer{
+    justify-content: center;
+  }
 }
